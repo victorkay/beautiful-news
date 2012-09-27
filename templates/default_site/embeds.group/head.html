@@ -13,5 +13,18 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="/beautiful-news/css/styles.css">
+
+{exp:jquery:script_tag}
+<script type="text/javascript">
+
+$(document).ready(function () {
+		$('#filter-dropdown').hide();
+		$('#filter-subject').click(function () {
+		$('#filter-dropdown').slideToggle(500);
+    });
+});
+
+</script>
+   
 </head>
 <body>

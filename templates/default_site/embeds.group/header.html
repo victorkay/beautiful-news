@@ -49,16 +49,30 @@
 <ul id="filter">
 	<li id="filter-icon"></li>
 	<li>Filter Stories</li>
-	<li id="filter-subject"><form name="catmenu" action="">
-    <select name="selcat" onchange="location=document.catmenu.selcat.options[document.catmenu.selcat.selectedIndex].value;">
-        <option value="">Subject</option>
-        {exp:channel:categories channel="story" style="linear"}
-            <option value="{path='channel'}">{category_name}</option>
-        {/exp:channel:categories}
-    </select>
-</form></li>
+	
+	<!-- ==================== -->
+	
+	<li id="filter-subject"><a href="#" class="show">Subject<span class="arrow"></span></a></li>
+	
+	<!-- ==================== -->
+	
 	<li id="filter-latest"><a href="{path='site_index'}">Latest</a></li>
 </ul><!--filter-->	
+
+
+
+<ul id="filter-dropdown">
+	{exp:channel:categories channel="story" style="linear"}
+	<li class="tag"><a href="{path='channel/index'}">{category_name}</a></li>
+	{/exp:channel:categories}
+</ul>
+
+
+
+
+
+		
+		
 
 </header>
 
