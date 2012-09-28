@@ -35,7 +35,7 @@
 
 </form><!--share-form-->
 
-<h3>Add more details</h3>
+<h3 id="add-more-details"><a class="show">Add more details</a></h3>
 
 <form id="more-details" action="">
 
@@ -80,6 +80,17 @@
 
 </div><!--share-->
 </div><!--content-->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+		$('#more-details').hide();
+		$('#add-more-details').click(function () {
+		$('#more-details').slideToggle(500);
+    });
+});
+
+</script>
 
 
 {embed="embeds/footer"}
