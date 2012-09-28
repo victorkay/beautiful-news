@@ -5,7 +5,13 @@
 
 <div id="content" class="centre">
 
-<h1>I want to share my Beautiful News of <a href="" id="subject-select">Select</a></h1>
+<h1>I want to share my Beautiful News of <a id="subject-select">Select</a></h1>
+
+<ul id="select-category">
+	{exp:channel:categories channel="story" style="linear"}
+	<li class="tag"><a href="{path='channel/index'}">{category_name}</a></li>
+	{/exp:channel:categories}
+</ul>
 
 <form id="share-form" action="">
 
@@ -35,7 +41,7 @@
 
 </form><!--share-form-->
 
-<h3 id="add-more-details"><a class="show">Add more details</a></h3>
+<h3 id="add-more-details"><a>Add more details</a></h3>
 
 <form id="more-details" action="">
 
@@ -87,6 +93,14 @@ $(document).ready(function () {
 		$('#more-details').hide();
 		$('#add-more-details').click(function () {
 		$('#more-details').slideToggle(500);
+    });
+});
+
+
+$(document).ready(function () {
+		$('#select-category').hide();
+		$('#subject-select').click(function () {
+		$('#select-category').slideToggle(500);
     });
 });
 

@@ -550,6 +550,16 @@ background: #fff;
 width: 900px;	
 }
 
+#select-category li {
+list-style-type: none;
+display: inline-block;
+float: left	
+}
+
+#subject-select {
+cursor: pointer;	
+}
+
    
 
 /* ==|== Footer ======================================================== */
