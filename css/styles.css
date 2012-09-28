@@ -423,7 +423,6 @@ font-weight: normal;
 }	
 
 
-
 /* ==|== Single Story ======================================================== */
 
 h1.story-title {
@@ -512,11 +511,13 @@ margin-right: 50px;
 margin-bottom: 10px;
 border: 0px;
 border-radius: 3px;		
+padding-left: 10px;
 }
 
 form input {
 height: 30px;
 }
+
 
 .checkbox {
 float: left;
@@ -542,12 +543,23 @@ background: #fff;
 
 
 #story {
-width: 900px;	
+width: 900px;
+padding-top: 10px;	
+}
+
+#add-more-details {
+cursor: pointer;	
 }
 
 #more-details {
-border: 1px solid white;	
+border: 1px solid white;
+padding: 30px;	
 }
+
+#more-details label {
+padding-bottom: 20px;
+}
+
 
 /* ================== */
 
